@@ -36,18 +36,18 @@ export default function BriefPage() {
     context: {
       energy: { level: 7, label: 'Good Energy', color: 'text-green-400' },
       hours: 4,
-      tntWorkload: { level: 'Moderate', color: 'bg-yellow-500' },
+      workload: { level: 'Moderate', color: 'bg-yellow-500' },
       complexity: 'Moderate'
     },
-    primaryDirective: "Execute strategic market opportunity capture - prioritize high-value prospects requiring deeper engagement",
+    primaryDirective: "Execute strategic goal achievement - prioritize high-impact initiatives requiring focused attention",
     supportingActivities: [
-      "Conduct comprehensive prospect research and competitive analysis",
-      "Prepare detailed proposal framework with ROI projections",
-      "Schedule strategic partnership discussions"
+      "Conduct comprehensive research and competitive analysis",
+      "Prepare detailed project framework with success metrics",
+      "Schedule strategic collaboration discussions"
     ],
-    partnerDelegations: [
-      "Delegate research tasks to partner for next-day briefing",
-      "Request partner support for client communication drafting"
+    teamDelegations: [
+      "Delegate research tasks to team for next-day briefing",
+      "Request team support for communication drafting"
     ],
     alternatives: [
       "Switch to administrative and planning tasks if creative energy is low",
@@ -63,7 +63,7 @@ export default function BriefPage() {
       text: activity,
       priority: 'medium' as const
     })),
-    ...briefData.partnerDelegations.map((delegation, index) => ({
+    ...briefData.teamDelegations.map((delegation, index) => ({
       id: `delegation-${index}`,
       text: `Delegate: ${delegation}`,
       priority: 'low' as const
@@ -137,7 +137,7 @@ export default function BriefPage() {
                     <Badge className={`${briefData.context.tntWorkload.color} text-white`}>
                       {briefData.context.tntWorkload.level}
                     </Badge>
-                    <div className="text-sm text-gray-400 mt-1">TNT Load</div>
+                    <div className="text-sm text-gray-400 mt-1">Workload</div>
                   </div>
                   <div className="text-center">
                     <div className="text-2xl font-bold text-white">{briefData.estimatedDuration}h</div>
@@ -185,17 +185,17 @@ export default function BriefPage() {
             </Card>
 
             {/* Partner Delegations */}
-            {briefData.partnerDelegations.length > 0 && (
+            {briefData.teamDelegations.length > 0 && (
               <Card className="bg-gray-900/50 border-gray-700">
                 <CardHeader>
                   <CardTitle className="text-white flex items-center">
                     <Users className="w-5 h-5 mr-2 text-cyan-400" />
-                    Partner Coordination
+                    Team Coordination
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
                   <div className="space-y-3">
-                    {briefData.partnerDelegations.map((delegation, index) => (
+                    {briefData.teamDelegations.map((delegation, index) => (
                       <div key={index} className="flex items-start gap-3 p-3 bg-gray-800/50 rounded-lg">
                         <Users className="w-5 h-5 text-cyan-400 mt-1" />
                         <p className="text-gray-300 leading-relaxed">{delegation}</p>

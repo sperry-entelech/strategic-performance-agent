@@ -37,23 +37,23 @@ export default function JournalPage() {
   const getTntAdvice = (workload: string) => {
     const advice = {
       'Light': {
-        text: '🟢 Optimal Entelech Focus Day',
-        details: 'Plan longer strategic sessions, complex proposals, and business development calls. Maximum productivity window available.',
+        text: '🟢 Optimal Focus Day',
+        details: 'Plan longer strategic sessions, complex projects, and important calls. Maximum productivity window available.',
         color: 'border-green-500 bg-green-500/10'
       },
       'Moderate': {
         text: '🟡 Balanced Approach',
-        details: 'Focus on quick wins and efficient task completion. Balance day job demands with consistent Entelech progress.',
+        details: 'Focus on quick wins and efficient task completion. Balance commitments with consistent progress.',
         color: 'border-yellow-500 bg-yellow-500/10'
       },
       'Heavy': {
         text: '🟠 Micro-Task Mode',
-        details: 'Limit to 15-minute Entelech windows. Prioritize partner delegation and relationship maintenance.',
+        details: 'Limit to 15-minute focused windows. Prioritize delegation and relationship maintenance.',
         color: 'border-orange-500 bg-orange-500/10'
       },
       'Critical': {
         text: '🔴 Survival Mode',
-        details: 'Maintenance only. Delegate everything possible to partners. Focus on next-day recovery preparation.',
+        details: 'Maintenance only. Delegate everything possible. Focus on next-day recovery preparation.',
         color: 'border-red-500 bg-red-500/10'
       }
     };
@@ -188,27 +188,27 @@ export default function JournalPage() {
             </CardContent>
           </Card>
 
-          {/* TNT Workload */}
+          {/* Primary Workload */}
           <Card className="bg-gray-900/50 border-gray-700">
             <CardHeader>
               <CardTitle className="flex items-center text-white">
                 <Target className="w-5 h-5 mr-2 text-orange-400" />
-                TNT Workload
+                Primary Workload
               </CardTitle>
-              <CardDescription>Day job intensity tomorrow</CardDescription>
+              <CardDescription>Main commitment intensity tomorrow</CardDescription>
             </CardHeader>
             <CardContent className="space-y-6">
               <div>
-                <Label className="text-white">TNT Intensity Level</Label>
+                <Label className="text-white">Workload Intensity Level</Label>
                 <Select value={tntWorkload} onValueChange={setTntWorkload}>
                   <SelectTrigger className="mt-2 bg-gray-800 border-gray-600 text-white">
                     <SelectValue placeholder="Select intensity..." />
                   </SelectTrigger>
                   <SelectContent className="bg-gray-800 border-gray-600">
-                    <SelectItem value="Light">Light - Minimal day job demands</SelectItem>
-                    <SelectItem value="Moderate">Moderate - Normal workday</SelectItem>
-                    <SelectItem value="Heavy">Heavy - High pressure/long hours</SelectItem>
-                    <SelectItem value="Critical">Critical - All-hands emergency mode</SelectItem>
+                    <SelectItem value="Light">Light - Minimal commitments</SelectItem>
+                    <SelectItem value="Moderate">Moderate - Normal schedule</SelectItem>
+                    <SelectItem value="Heavy">Heavy - High pressure/busy</SelectItem>
+                    <SelectItem value="Critical">Critical - Emergency/crisis mode</SelectItem>
                   </SelectContent>
                 </Select>
               </div>
@@ -225,7 +225,7 @@ export default function JournalPage() {
               )}
               
               <div>
-                <Label htmlFor="tnt-description" className="text-white">TNT Context & Description</Label>
+                <Label htmlFor="tnt-description" className="text-white">Workload Context & Description</Label>
                 <Textarea
                   id="tnt-description"
                   placeholder="Key meetings, projects, deadlines, travel, or special circumstances..."
@@ -241,15 +241,15 @@ export default function JournalPage() {
             <CardHeader>
               <CardTitle className="flex items-center text-white">
                 <TrendingUp className="w-5 h-5 mr-2 text-green-400" />
-                Market Intelligence
+                Goals & Opportunities
               </CardTitle>
-              <CardDescription>Hot opportunities and timing windows</CardDescription>
+              <CardDescription>Key opportunities and timing-sensitive goals</CardDescription>
             </CardHeader>
             <CardContent>
               <Label htmlFor="market-opportunities" className="text-white">Priority Opportunities</Label>
               <Textarea
                 id="market-opportunities"
-                placeholder="Warm prospects, proposal deadlines, networking events, strategic partnerships..."
+                placeholder="Important goals, deadlines, networking events, key meetings, strategic initiatives..."
                 rows={4}
                 className="mt-2 bg-gray-800 border-gray-600 text-white"
               />
@@ -311,12 +311,12 @@ export default function JournalPage() {
             </CardContent>
           </Card>
 
-          {/* Partner Coordination */}
+          {/* Team Coordination */}
           <Card className="bg-gray-900/50 border-gray-700">
             <CardHeader>
               <CardTitle className="flex items-center text-white">
                 <Users className="w-5 h-5 mr-2 text-cyan-400" />
-                Partner Coordination
+                Team Coordination
               </CardTitle>
               <CardDescription>Collaboration and delegation needs</CardDescription>
             </CardHeader>
@@ -328,16 +328,16 @@ export default function JournalPage() {
                   onCheckedChange={(checked) => setPartnerCoordination(!!checked)}
                 />
                 <Label htmlFor="partner-coordination" className="text-white">
-                  Need partner support tomorrow
+                  Need team support tomorrow
                 </Label>
               </div>
               
               {partnerCoordination && (
                 <div>
-                  <Label htmlFor="coordination-requests" className="text-white">Specific Partner Requests</Label>
+                  <Label htmlFor="coordination-requests" className="text-white">Specific Team Requests</Label>
                   <Textarea
                     id="coordination-requests"
-                    placeholder="Research tasks, client communication, meeting preparation, administrative support..."
+                    placeholder="Research tasks, communication, meeting preparation, administrative support, project coordination..."
                     rows={3}
                     className="mt-2 bg-gray-800 border-gray-600 text-white"
                   />

@@ -13,7 +13,7 @@ A modern, shareable web application for strategic daily briefing with beautiful 
 - **Interactive Elements**: Smooth hover effects, animated icons, and engaging micro-interactions
 
 ### 🧠 Intelligent Brief Generation
-- **TNT Workload Adaptation**: Light, Moderate, Heavy, and Critical day job intensity levels
+- **Workload Intelligence**: Light, Moderate, Heavy, and Critical workload intensity levels
 - **CLEAR Framework Integration**: Context-aware strategic directive generation
 - **Energy Optimization**: Matches task complexity to predicted energy levels
 - **Smart Delegation**: Automatic partner coordination suggestions for heavy days
@@ -169,7 +169,7 @@ CREATE POLICY "Users can only see their own feedback" ON brief_feedback
 ### Key Components Built
 
 - **Homepage**: Hero section with gradient backgrounds and feature cards
-- **Journal Form**: Multi-section form with TNT workload integration
+- **Journal Form**: Multi-section form with workload intelligence integration
 - **Brief Display**: Dashboard-style layout with progress tracking
 - **Interactive Elements**: Sliders, checkboxes, star ratings, progress bars
 
@@ -183,7 +183,7 @@ CREATE POLICY "Users can only see their own feedback" ON brief_feedback
 
 ### Demo Features
 - Beautiful landing page showcasing the Strategic Performance Agent concept
-- Interactive journal form with TNT workload intelligence
+- Interactive journal form with workload intelligence
 - Morning brief dashboard with progress tracking
 - Mobile-responsive design that works perfectly on phones
 

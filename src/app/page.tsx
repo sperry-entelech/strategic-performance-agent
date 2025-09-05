@@ -26,7 +26,7 @@ export default function HomePage() {
             
             <p className="max-w-3xl mx-auto text-xl text-gray-300 leading-relaxed">
               Transform evening reflections into strategic morning directives. 
-              Intelligently optimize your revenue opportunities while adapting to real-world constraints.
+              Intelligently optimize your goals and priorities while adapting to real-world constraints.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8">
@@ -59,22 +59,22 @@ export default function HomePage() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <FeatureCard
             icon={<Target className="w-8 h-8" />}
-            title="TNT Workload Integration"
-            description="Automatically adjusts task complexity based on your day job intensity - from Light focus days to Critical survival mode."
+            title="Workload Intelligence"
+            description="Automatically adjusts task complexity based on your capacity and commitments - from high-focus days to busy survival mode."
             gradient="from-blue-500 to-cyan-500"
           />
           
           <FeatureCard
             icon={<Brain className="w-8 h-8" />}
             title="CLEAR Framework Application"
-            description="Structured strategic thinking for maximum revenue impact with context-aware directive generation."
+            description="Structured strategic thinking for maximum goal achievement with context-aware directive generation."
             gradient="from-purple-500 to-pink-500"
           />
           
           <FeatureCard
             icon={<Users className="w-8 h-8" />}
-            title="Smart Partner Coordination"
-            description="Intelligent delegation suggestions for heavy workdays, maintaining momentum through collaboration."
+            title="Smart Team Coordination"
+            description="Intelligent delegation suggestions for busy periods, maintaining momentum through collaboration."
             gradient="from-green-500 to-emerald-500"
           />
           
