@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
-import { ArrowLeft, Save, Sparkles, Moon, Clock, Target, TrendingUp, Users } from 'lucide-react';
+import { ArrowLeft, Save, Sparkles, Moon, Clock, Target, TrendingUp, Users, Zap } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Input } from '@/components/ui/input';

@@ -134,8 +134,8 @@ export default function BriefPage() {
                     <div className="text-sm text-gray-400">Available</div>
                   </div>
                   <div className="text-center">
-                    <Badge className={`${briefData.context.tntWorkload.color} text-white`}>
-                      {briefData.context.tntWorkload.level}
+                    <Badge className={`${briefData.context.workload.color} text-white`}>
+                      {briefData.context.workload.level}
                     </Badge>
                     <div className="text-sm text-gray-400 mt-1">Workload</div>
                   </div>
