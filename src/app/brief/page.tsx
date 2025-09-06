@@ -281,7 +281,7 @@ export default function EnhancedBriefPage() {
           {/* Enhanced Main Content */}
           <div className="lg:col-span-2 space-y-8">
             {/* Context Summary with Better Visual Hierarchy */}
-            <Card className="bg-gray-900/50 border-gray-700 backdrop-blur-sm">
+            <Card className="bg-gray-900/90 border-gray-600 backdrop-blur-sm">
               <CardHeader>
                 <CardTitle className="text-white flex items-center">
                   <Target className="w-5 h-5 mr-2 text-blue-400" />
@@ -343,7 +343,7 @@ export default function EnhancedBriefPage() {
             </Card>
 
             {/* Enhanced Supporting Activities */}
-            <Card className="bg-gray-900/50 border-gray-700 backdrop-blur-sm">
+            <Card className="bg-gray-900/90 border-gray-600 backdrop-blur-sm">
               <CardHeader>
                 <CardTitle className="text-white flex items-center">
                   <Zap className="w-5 h-5 mr-2 text-yellow-400" />
@@ -369,7 +369,7 @@ export default function EnhancedBriefPage() {
 
             {/* Enhanced Team Coordination */}
             {briefData.teamDelegations.length > 0 && (
-              <Card className="bg-gray-900/50 border-gray-700 backdrop-blur-sm">
+              <Card className="bg-gray-900/90 border-gray-600 backdrop-blur-sm">
                 <CardHeader>
                   <CardTitle className="text-white flex items-center">
                     <Users className="w-5 h-5 mr-2 text-cyan-400" />
@@ -394,7 +394,7 @@ export default function EnhancedBriefPage() {
 
             {/* Enhanced Alternatives */}
             {briefData.alternatives.length > 0 && (
-              <Card className="bg-gray-900/50 border-gray-700 backdrop-blur-sm">
+              <Card className="bg-gray-900/90 border-gray-600 backdrop-blur-sm">
                 <CardHeader>
                   <CardTitle className="text-white flex items-center">
                     <RotateCw className="w-5 h-5 mr-2 text-orange-400" />
@@ -421,7 +421,7 @@ export default function EnhancedBriefPage() {
           {/* Enhanced Sidebar */}
           <div className="space-y-6">
             {/* Enhanced Progress Tracker */}
-            <Card className="bg-gray-900/50 border-gray-700 backdrop-blur-sm">
+            <Card className="bg-gray-900/90 border-gray-600 backdrop-blur-sm">
               <CardHeader>
                 <CardTitle className="text-white flex items-center justify-between">
                   <span className="flex items-center">
@@ -454,7 +454,7 @@ export default function EnhancedBriefPage() {
             </Card>
 
             {/* Enhanced Action Checklist */}
-            <Card className="bg-gray-900/50 border-gray-700 backdrop-blur-sm">
+            <Card className="bg-gray-900/90 border-gray-600 backdrop-blur-sm">
               <CardHeader>
                 <CardTitle className="text-white flex items-center">
                   <CheckCircle className="w-5 h-5 mr-2 text-green-400" />
@@ -490,7 +490,7 @@ export default function EnhancedBriefPage() {
             </Card>
 
             {/* Enhanced Quick Actions */}
-            <Card className="bg-gray-900/50 border-gray-700 backdrop-blur-sm">
+            <Card className="bg-gray-900/90 border-gray-600 backdrop-blur-sm">
               <CardHeader>
                 <CardTitle className="text-white">Quick Actions</CardTitle>
               </CardHeader>
@@ -517,7 +517,7 @@ export default function EnhancedBriefPage() {
             </Card>
 
             {/* Enhanced Feedback */}
-            <Card className="bg-gray-900/50 border-gray-700 backdrop-blur-sm">
+            <Card className="bg-gray-900/90 border-gray-600 backdrop-blur-sm">
               <CardHeader>
                 <CardTitle className="text-white">Brief Quality</CardTitle>
                 <CardDescription>Help us improve future briefs</CardDescription>

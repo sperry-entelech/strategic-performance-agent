@@ -31,7 +31,7 @@ export function Layout({ children, showBackButton = false, title, description }:
   return (
     <div className={`min-h-screen transition-colors duration-300 ${
       theme === 'dark' 
-        ? 'bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900' 
+        ? 'bg-black' 
         : 'bg-gradient-to-br from-gray-50 via-blue-50 to-purple-50'
     }`}>
       {/* Header */}
