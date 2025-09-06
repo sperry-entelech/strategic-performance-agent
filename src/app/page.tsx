@@ -9,75 +9,6 @@ import {
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 
-const TreyarchKnot = () => {
-  return (
-    <svg
-      width="40"
-      height="40"
-      viewBox="0 0 120 120"
-      className="text-green-400"
-    >
-      <defs>
-        <filter id="matrixGlow" x="-20%" y="-20%" width="140%" height="140%">
-          <feGaussianBlur stdDeviation="1.5" result="coloredBlur"/>
-          <feMerge> 
-            <feMergeNode in="coloredBlur"/>
-            <feMergeNode in="SourceGraphic"/> 
-          </feMerge>
-        </filter>
-      </defs>
-      
-      {/* Treyarch-style trinity knot - three interlocked curved triangles */}
-      <g filter="url(#matrixGlow)" className="animate-pulse">
-        {/* First curve - top */}
-        <path
-          d="M60,20 Q80,40 60,60 Q40,40 60,20 Z"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="3"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
-        
-        {/* Second curve - bottom left */}
-        <path
-          d="M35,75 Q55,95 75,75 Q55,55 35,75 Z"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="3"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
-        
-        {/* Third curve - bottom right */}
-        <path
-          d="M85,75 Q65,55 45,75 Q65,95 85,75 Z"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="3"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        />
-        
-        {/* Center interlocking ring */}
-        <circle
-          cx="60"
-          cy="60"
-          r="12"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="2"
-          opacity="0.8"
-        />
-      </g>
-      
-      {/* Digital accent dots at key points */}
-      <circle cx="60" cy="30" r="1" fill="currentColor" className="animate-ping" />
-      <circle cx="45" cy="80" r="1" fill="currentColor" className="animate-ping" style={{animationDelay: '0.7s'}} />
-      <circle cx="75" cy="80" r="1" fill="currentColor" className="animate-ping" style={{animationDelay: '1.4s'}} />
-    </svg>
-  );
-};
 
 const MatrixRain = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -164,26 +95,12 @@ export default function HomePage() {
       <div className="relative z-10 max-w-6xl mx-auto px-4 py-8">
         {/* Header */}
         <div className="mb-12 text-center">
-          <div className="mb-6">
-            <TreyarchKnot />
-          </div>
-          <div className="mb-4">
-            <div className="text-green-400 text-xs mb-1 tracking-widest font-mono">
-              01001001 01001110 01001001 01010100 01001001 01000001 01001100 01001001 01011010 01001001 01001110 01000111
-            </div>
-            <h1 className="text-2xl font-bold text-green-400 mb-2 tracking-[0.3em] font-mono">
-              STRATEGIC_BRIEFING_MATRIX
-            </h1>
-            <div className="text-green-400 text-xs mb-4 tracking-widest font-mono">
-              01010010 01010101 01001110 01001110 01001001 01001110 01000111
-            </div>
-          </div>
-          <div className="text-green-300 text-sm opacity-90 font-mono tracking-wider">
-            {'>'} NEURAL_NETWORK.ACCOUNTABILITY_PROTOCOL.ACTIVE
-          </div>
-          <div className="text-green-400 text-xs mt-2 font-mono opacity-70">
-            {'>'} AWAITING_USER_INPUT...
-          </div>
+          <h1 className="text-4xl font-bold text-green-400 mb-4 font-mono">
+            DAILY BRIEF
+          </h1>
+          <p className="text-green-300 text-lg font-mono">
+            Strategic Performance Matrix
+          </p>
         </div>
 
         {/* Core Functions Grid */}
