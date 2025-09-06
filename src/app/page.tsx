@@ -23,7 +23,7 @@ export default function HomePage() {
         {/* Title */}
         <div className="mb-8">
           <h1 className="text-4xl font-bold text-green-400 mb-2">
-            > DAILY BRIEF SYSTEM
+            {'>'} DAILY BRIEF SYSTEM
           </h1>
           <p className="text-cyan-300 text-lg">
             // Personal accountability & strategic optimization hub
