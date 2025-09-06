@@ -63,7 +63,7 @@ export default function EnhancedBriefPage() {
       setError(null);
       
       // Simulate API call
-      await new Promise(resolve => setTimeout(resolve, 2000));
+      await new Promise(resolve => setTimeout(resolve, 500));
       
       const mockData: BriefData = {
         date: new Date().toLocaleDateString('en-US', { 
