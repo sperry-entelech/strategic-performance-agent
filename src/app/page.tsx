@@ -9,6 +9,48 @@ import {
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 
+const CelticTrinityKnot = () => {
+  return (
+    <svg
+      width="48"
+      height="48"
+      viewBox="0 0 100 100"
+      className="text-green-400"
+    >
+      {/* Celtic Trinity Knot */}
+      <defs>
+        <filter id="matrixGlow" x="-50%" y="-50%" width="200%" height="200%">
+          <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+          <feMerge> 
+            <feMergeNode in="coloredBlur"/>
+            <feMergeNode in="SourceGraphic"/> 
+          </feMerge>
+        </filter>
+      </defs>
+      
+      {/* Main knot structure */}
+      <path
+        d="M50,15 C65,15 75,25 75,40 C75,50 70,55 60,57 C70,59 75,64 75,75 C75,85 65,90 50,85 C45,83 42,80 40,75 C38,80 35,83 30,85 C15,90 5,85 5,75 C5,64 10,59 20,57 C10,55 5,50 5,40 C5,25 15,15 30,15 C35,15 38,17 40,22 C42,17 45,15 50,15 Z"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="3"
+        filter="url(#matrixGlow)"
+        className="animate-pulse"
+      />
+      
+      {/* Inner interlacing details */}
+      <circle cx="35" cy="35" r="8" fill="none" stroke="currentColor" strokeWidth="2" opacity="0.7" />
+      <circle cx="65" cy="35" r="8" fill="none" stroke="currentColor" strokeWidth="2" opacity="0.7" />
+      <circle cx="50" cy="65" r="8" fill="none" stroke="currentColor" strokeWidth="2" opacity="0.7" />
+      
+      {/* Digital accent dots */}
+      <circle cx="50" cy="25" r="1.5" fill="currentColor" className="animate-ping" />
+      <circle cx="30" cy="50" r="1.5" fill="currentColor" className="animate-ping" style={{animationDelay: '0.5s'}} />
+      <circle cx="70" cy="50" r="1.5" fill="currentColor" className="animate-ping" style={{animationDelay: '1s'}} />
+    </svg>
+  );
+};
+
 const MatrixRain = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
 
@@ -94,10 +136,8 @@ export default function HomePage() {
       <div className="relative z-10 max-w-6xl mx-auto px-4 py-8">
         {/* Header */}
         <div className="mb-12 text-center">
-          <div className="inline-flex items-center mb-6 px-4 py-2 border border-green-500/70 rounded-sm bg-black/80">
-            <Terminal className="w-5 h-5 text-green-400 mr-2" />
-            <span className="text-green-400 font-bold">[AI]</span>
-            <span className="text-green-300 ml-2 font-mono">DAILY_BRIEF.EXE</span>
+          <div className="inline-flex items-center justify-center mb-6 p-4 border border-green-500/70 bg-black/90">
+            <CelticTrinityKnot />
           </div>
           <div className="mb-4">
             <div className="text-green-400 text-xs mb-1 tracking-widest font-mono">
