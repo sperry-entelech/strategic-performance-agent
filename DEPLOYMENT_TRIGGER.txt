@@ -1,7 +1,7 @@
-Deployment trigger: Celtic Trinity Knot Logo - 2024-01-09 18:30
-Replaced .exe branding with custom Celtic trinity knot SVG logo
-Matrix-themed Celtic design with green glow filter and pulse animation
-Traditional Celtic interlacing pattern with digital accent dots
-Animated pinging elements with staggered timing for Matrix effect
-Clean header positioning with proper border and background styling
-Logo combines ancient Celtic symbolism with futuristic Matrix aesthetic
+Deployment trigger: Treyarch-Style Trinity Logo - 2024-01-09 18:45
+Fixed off-center positioning by removing unnecessary border box
+Redesigned logo to match clean Treyarch trinity knot style
+Three interlocked curved triangular paths with center ring
+Proper centering without background box or border styling
+Smaller 40x40 size with optimized glow filter and animations
+Clean geometric design with Matrix green theme and pulsing effects
