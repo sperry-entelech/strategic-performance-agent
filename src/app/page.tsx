@@ -94,76 +94,103 @@ export default function HomePage() {
       <div className="relative z-10 max-w-6xl mx-auto px-4 py-8">
         {/* Header */}
         <div className="mb-12 text-center">
-          <div className="inline-flex items-center mb-4 px-4 py-2 border border-green-800/50 rounded-lg bg-black/50">
-            <Terminal className="w-5 h-5 text-cyan-400 mr-2" />
-            <span className="text-cyan-400">[AI]</span>
-            <span className="text-green-400 ml-2">daily-brief.exe</span>
+          <div className="inline-flex items-center mb-6 px-4 py-2 border border-green-500/70 rounded-sm bg-black/80">
+            <Terminal className="w-5 h-5 text-green-400 mr-2" />
+            <span className="text-green-400 font-bold">[AI]</span>
+            <span className="text-green-300 ml-2 font-mono">DAILY_BRIEF.EXE</span>
           </div>
-          <h1 className="text-3xl font-bold text-green-400 mb-2 tracking-wider">
-            STRATEGIC BRIEFING MATRIX
-          </h1>
-          <p className="text-cyan-300 text-lg opacity-80">
-            :: neural_network.accountability_protocol.active ::
-          </p>
+          <div className="mb-4">
+            <div className="text-green-400 text-xs mb-1 tracking-widest font-mono">
+              01001001 01001110 01001001 01010100 01001001 01000001 01001100 01001001 01011010 01001001 01001110 01000111
+            </div>
+            <h1 className="text-2xl font-bold text-green-400 mb-2 tracking-[0.3em] font-mono">
+              STRATEGIC_BRIEFING_MATRIX
+            </h1>
+            <div className="text-green-400 text-xs mb-4 tracking-widest font-mono">
+              01010010 01010101 01001110 01001110 01001001 01001110 01000111
+            </div>
+          </div>
+          <div className="text-green-300 text-sm opacity-90 font-mono tracking-wider">
+            {'>'} NEURAL_NETWORK.ACCOUNTABILITY_PROTOCOL.ACTIVE
+          </div>
+          <div className="text-green-400 text-xs mt-2 font-mono opacity-70">
+            {'>'} AWAITING_USER_INPUT...
+          </div>
         </div>
 
         {/* Core Functions Grid */}
         <div className="grid md:grid-cols-2 gap-8 mb-12">
           {/* Input Node */}
-          <Card className="bg-black/70 border border-green-800/50 hover:border-green-500/70 transition-all duration-300 group">
+          <Card className="bg-black/80 border border-green-500/50 hover:border-green-400/80 transition-all duration-300 group">
             <CardHeader className="pb-4">
               <div className="flex items-center justify-between">
                 <div className="flex items-center space-x-3">
-                  <div className="w-8 h-8 rounded-full bg-green-800/50 flex items-center justify-center">
+                  <div className="w-8 h-8 bg-green-900/70 border border-green-500/50 flex items-center justify-center">
                     <FileText className="w-4 h-4 text-green-400" />
                   </div>
-                  <CardTitle className="text-lg text-green-400">
-                    INPUT.NODE
+                  <CardTitle className="text-lg text-green-400 font-mono tracking-wider">
+                    INPUT_NODE
                   </CardTitle>
                 </div>
-                <span className="text-xs text-orange-400 px-2 py-1 bg-orange-900/20 rounded">
-                  EVENING
-                </span>
+                <div className="text-xs text-green-300 px-3 py-1 bg-green-900/30 border border-green-600/50 font-mono">
+                  EVENING_LOG
+                </div>
+              </div>
+              <div className="text-green-400 text-xs font-mono mt-2 opacity-70">
+                01001001 01001110 01010000 01010101 01010100
               </div>
             </CardHeader>
             <CardContent className="space-y-4">
-              <p className="text-cyan-300 text-sm">
-                Data collection & context logging protocol
-              </p>
+              <div className="text-green-300 text-sm font-mono">
+                {'>'} DATA_COLLECTION_PROTOCOL_ACTIVE
+              </div>
+              <div className="text-green-400 text-xs font-mono opacity-80 space-y-1">
+                <div>{'>'} CONTEXT_LOGGING.enabled</div>
+                <div>{'>'} PERFORMANCE_METRICS.tracking</div>
+                <div>{'>'} WORKLOAD_ASSESSMENT.running</div>
+              </div>
               <Link href="/journal" className="block">
-                <Button className="w-full bg-gradient-to-r from-green-900 to-green-800 hover:from-green-800 hover:to-green-700 text-green-100 border-green-600">
+                <Button className="w-full bg-green-900/50 hover:bg-green-800/70 text-green-300 border border-green-500/50 hover:border-green-400/70 font-mono text-sm">
                   <ArrowRight className="w-4 h-4 mr-2" />
-                  Execute Input Sequence
+                  EXECUTE_INPUT_SEQUENCE
                 </Button>
               </Link>
             </CardContent>
           </Card>
 
           {/* Output Node */}
-          <Card className="bg-black/70 border border-cyan-800/50 hover:border-cyan-500/70 transition-all duration-300 group">
+          <Card className="bg-black/80 border border-green-500/50 hover:border-green-400/80 transition-all duration-300 group">
             <CardHeader className="pb-4">
               <div className="flex items-center justify-between">
                 <div className="flex items-center space-x-3">
-                  <div className="w-8 h-8 rounded-full bg-cyan-800/50 flex items-center justify-center">
-                    <TrendingUp className="w-4 h-4 text-cyan-400" />
+                  <div className="w-8 h-8 bg-green-900/70 border border-green-500/50 flex items-center justify-center">
+                    <TrendingUp className="w-4 h-4 text-green-400" />
                   </div>
-                  <CardTitle className="text-lg text-cyan-400">
-                    OUTPUT.NODE
+                  <CardTitle className="text-lg text-green-400 font-mono tracking-wider">
+                    OUTPUT_NODE
                   </CardTitle>
                 </div>
-                <span className="text-xs text-orange-400 px-2 py-1 bg-orange-900/20 rounded">
-                  MORNING
-                </span>
+                <div className="text-xs text-green-300 px-3 py-1 bg-green-900/30 border border-green-600/50 font-mono">
+                  MORNING_BRIEF
+                </div>
+              </div>
+              <div className="text-green-400 text-xs font-mono mt-2 opacity-70">
+                01001111 01010101 01010100 01010000 01010101 01010100
               </div>
             </CardHeader>
             <CardContent className="space-y-4">
-              <p className="text-cyan-300 text-sm">
-                Strategic directive generation & optimization
-              </p>
+              <div className="text-green-300 text-sm font-mono">
+                {'>'} STRATEGIC_DIRECTIVE_GENERATION_ACTIVE
+              </div>
+              <div className="text-green-400 text-xs font-mono opacity-80 space-y-1">
+                <div>{'>'} AI_OPTIMIZATION.running</div>
+                <div>{'>'} CLEAR_FRAMEWORK.processing</div>
+                <div>{'>'} PRIORITY_SEQUENCING.enabled</div>
+              </div>
               <Link href="/brief" className="block">
-                <Button className="w-full bg-gradient-to-r from-cyan-900 to-cyan-800 hover:from-cyan-800 hover:to-cyan-700 text-cyan-100 border-cyan-600">
+                <Button className="w-full bg-green-900/50 hover:bg-green-800/70 text-green-300 border border-green-500/50 hover:border-green-400/70 font-mono text-sm">
                   <ArrowRight className="w-4 h-4 mr-2" />
-                  Generate Brief Matrix
+                  GENERATE_BRIEF_MATRIX
                 </Button>
               </Link>
             </CardContent>
@@ -172,47 +199,60 @@ export default function HomePage() {
 
         {/* Interactive Function Nodes */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
-          <Card className="bg-black/50 border border-purple-800/50 hover:border-purple-500/70 transition-all group cursor-pointer">
+          <Card className="bg-black/70 border border-green-600/50 hover:border-green-400/80 transition-all group cursor-pointer">
             <CardContent className="p-4 text-center">
-              <Bot className="w-6 h-6 text-purple-400 mx-auto mb-2" />
-              <div className="text-xs text-purple-300 font-medium">AUTOMATE</div>
-              <div className="text-xs text-gray-400">Schedule & Sync</div>
+              <Bot className="w-6 h-6 text-green-400 mx-auto mb-2" />
+              <div className="text-xs text-green-300 font-mono font-medium">AUTOMATE</div>
+              <div className="text-xs text-green-500 font-mono opacity-70">SCHEDULE.sync</div>
             </CardContent>
           </Card>
 
-          <Card className="bg-black/50 border border-yellow-800/50 hover:border-yellow-500/70 transition-all group cursor-pointer">
+          <Card className="bg-black/70 border border-green-600/50 hover:border-green-400/80 transition-all group cursor-pointer">
             <CardContent className="p-4 text-center">
-              <Download className="w-6 h-6 text-yellow-400 mx-auto mb-2" />
-              <div className="text-xs text-yellow-300 font-medium">EXPORT</div>
-              <div className="text-xs text-gray-400">Data & Reports</div>
+              <Download className="w-6 h-6 text-green-400 mx-auto mb-2" />
+              <div className="text-xs text-green-300 font-mono font-medium">EXPORT</div>
+              <div className="text-xs text-green-500 font-mono opacity-70">DATA.reports</div>
             </CardContent>
           </Card>
 
-          <Card className="bg-black/50 border border-orange-800/50 hover:border-orange-500/70 transition-all group cursor-pointer">
+          <Card className="bg-black/70 border border-green-600/50 hover:border-green-400/80 transition-all group cursor-pointer">
             <CardContent className="p-4 text-center">
-              <Share2 className="w-6 h-6 text-orange-400 mx-auto mb-2" />
-              <div className="text-xs text-orange-300 font-medium">SHARE</div>
-              <div className="text-xs text-gray-400">Distribute Brief</div>
+              <Share2 className="w-6 h-6 text-green-400 mx-auto mb-2" />
+              <div className="text-xs text-green-300 font-mono font-medium">SHARE</div>
+              <div className="text-xs text-green-500 font-mono opacity-70">DISTRIBUTE.brief</div>
             </CardContent>
           </Card>
 
-          <Card className="bg-black/50 border border-red-800/50 hover:border-red-500/70 transition-all group cursor-pointer">
+          <Card className="bg-black/70 border border-green-600/50 hover:border-green-400/80 transition-all group cursor-pointer">
             <CardContent className="p-4 text-center">
-              <Settings className="w-6 h-6 text-red-400 mx-auto mb-2" />
-              <div className="text-xs text-red-300 font-medium">CONFIG</div>
-              <div className="text-xs text-gray-400">System Params</div>
+              <Settings className="w-6 h-6 text-green-400 mx-auto mb-2" />
+              <div className="text-xs text-green-300 font-mono font-medium">CONFIG</div>
+              <div className="text-xs text-green-500 font-mono opacity-70">SYSTEM.params</div>
             </CardContent>
           </Card>
         </div>
 
         {/* Matrix Console */}
-        <div className="bg-black/80 border border-green-800/30 rounded-lg p-4">
-          <div className="flex items-center space-x-2 mb-2">
-            <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></div>
-            <span className="text-green-400 text-xs">NEURAL_LINK.ACTIVE</span>
+        <div className="bg-black/90 border border-green-500/50 p-6">
+          <div className="flex items-center space-x-3 mb-4">
+            <div className="w-3 h-3 bg-green-400 animate-pulse"></div>
+            <span className="text-green-400 text-sm font-mono tracking-wider">NEURAL_LINK.ACTIVE</span>
+            <div className="flex-1 h-px bg-green-500/30"></div>
           </div>
-          <div className="text-xs text-cyan-300 opacity-70">
-            {'>'} Awaiting directive input...
+          <div className="space-y-2 font-mono text-xs">
+            <div className="text-green-400">
+              {'>'} SYSTEM_STATUS: OPERATIONAL
+            </div>
+            <div className="text-green-300 opacity-80">
+              {'>'} BRIEFING_MATRIX: INITIALIZED  
+            </div>
+            <div className="text-green-400 opacity-60">
+              {'>'} AWAITING_USER_DIRECTIVE...
+            </div>
+            <div className="flex items-center mt-4">
+              <span className="text-green-400">{'>'}</span>
+              <span className="text-green-300 ml-2 animate-pulse">_</span>
+            </div>
           </div>
         </div>
       </div>
